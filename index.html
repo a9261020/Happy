@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <div>
+        <select v-model="input.singer">
+          <option>全部</option>
+          <option>Jony J</option>
+          <option>Gai</option>
+          <option>李佳隆</option>
+          <option>王閃火</option>
+          <option>大傻</option>
+        </select>
+        <input 
+        type="text"
+        v-model="input.name" 
+        />
+      </div>
+
+      <!-- 一定要綁定computed做完之後的最終陣列 -->
+      <div class="menu" v-for="(item, index) in anotherFilter">
+        <div>
+          <span>{{index + 1}} </span>
+          <span>{{item.name}}</span>
+          <a>{{item.song}}</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.js"></script>
+    <script src="day7.js"></script>
+  </body>
+</html>
