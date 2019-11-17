@@ -24,6 +24,11 @@
       type="text/css"
     />
 
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional"
+      rel="stylesheet"
+    />
+
     <!-- jQuery and Modernizr-->
     <script src="js/jquery-2.1.1.js"></script>
 
@@ -36,6 +41,7 @@
   </head>
 
   <body class="index-page">
+    <!-- 熊小姐介紹 -->
     <header id="nav-home">
       <div
         id="carousel-example-generic"
@@ -43,51 +49,41 @@
         data-ride="carousel"
       >
         <div class="carousel-inner" id="carousel1">
-			<img 
-			src="images/cover.jpg" 
-			alt="First slide"
-			/>
-            <div class="header-text hidden-xs">
-              <div class="col-md-12 text-center">
-                <h2 class="header-text">
-                  We are Invite all to Celebrate Our Wedding<br /><br /><span
-                    >The Party is Over!!</span
-                  >
-                </h2>
-              </div>
-            </div>
+          <img src="images/cover.jpg" alt="First slide" />
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center"></div>
           </div>
         </div>
       </div>
     </header>
-
     <div id="page-content">
       <section class="box-content box-1 box-style-3">
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
-              <div class="box-item">
+              <div class="box-item" style="margin-bottom:34px;margin-left:13px">
                 <div>
                   <a>
                     <img
-                      src="images/bride.jpg"
+                      src="images/coverSelfie.jpg"
                       title="icon-name"
                       class="img-circle"
-                  /></a>
-                  <h3>Jason Story</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua
+                    />
+                  </a>
+                  <h3>熊小姐</h3>
+                  <p style="color: white;margin: 0;padding: 0;height: 23px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit,
                   </p>
+                  <p>個性開朗，有時會做出很奇怪的舉動</p>
+                  <p>其實常常自己低潮又不敢說</p>
+                  <p>喜歡出去玩、花錢、跟貓先生(?)</p>
                 </div>
                 <br />
                 <button
                   style="justify-content: flex-start;"
                   type="button"
-				  class="btn btn-light"
-				  id="chp1"
+                  class="btn btn-light"
+                  id="chp1"
                 >
                   Next Page
                 </button>
@@ -96,6 +92,9 @@
           </div>
         </div>
       </section>
+    </div>
+
+    <!-- 貓先生介紹 -->
     <header id="nav-home">
       <div
         id="carousel-example-generic"
@@ -103,32 +102,19 @@
         data-ride="carousel"
       >
         <div class="carousel-inner" id="carousel2">
-          <div class="item active">
-			<img 
-			src="images/cover2.jpg" 
-			alt="First slide" 
-			
-			/>
-            <div class="header-text hidden-xs">
-              <div class="col-md-12 text-center">
-                <h2 class="header-text">
-                  We are Invite all to Celebrate Our Wedding<br /><br /><span
-                    >The Party is Over!!</span
-                  >
-                </h2>
-              </div>
-            </div>
+          <img src="images/cover2.jpg" alt="First slide" />
+          <div class="header-text hidden-xs">
+            <div class="col-md-12 text-center"></div>
           </div>
         </div>
       </div>
     </header>
-
     <div id="page-content">
       <section class="box-content box-1 box-style-3">
         <div class="container">
           <div class="row">
             <div class="col-sm-6">
-              <div class="box-item">
+              <div class="box-item" style="margin-bottom:33px;margin-left:13px">
                 <div>
                   <a>
                     <img
@@ -136,20 +122,22 @@
                       title="icon-name"
                       class="img-circle"
                   /></a>
-                  <h3>Jason Story</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua
+                  <h3>貓先生</h3>
+                  <p style="color: white;margin: 0;padding: 0;height: 23px;">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit,
                   </p>
+                  <p>
+                    個性冷淡，沒事不太開口
+                  </p>
+                  <p>但是個很會為人著想的暖男</p>
+                  <p>喜歡運動跟在家耍廢還有熊小姐</p>
                 </div>
                 <br />
                 <button
                   style="justify-content: flex-start;"
                   type="button"
-				  class="btn btn-light"
-				  id="chp2"
+                  class="btn btn-light"
+                  id="chp2"
                 >
                   Next Page
                 </button>
@@ -158,99 +146,146 @@
           </div>
         </div>
       </section>
+    </div>
 
+    <div id="page-content">
+      <!-- 故事開始 -->
       <section class="box-content box-4 box-style-2">
         <div class="container">
           <div class="row">
-            <div class="box-item">
-              <blockquote>
-                <p>
-                  很久很久以前‧‧‧‧‧‧
-                </p>
-              </blockquote>
+            <div
+              class="box-item"
+              style="
+			font-size: 30px;
+			text-align: center;
+			color: black;
+			height: 60px;
+			width: 50%;
+			margin-left: 100px;
+			padding-top: 15px;
+			background-color: rgba(128,128,128,0.3);"
+            >
+              <p>故事開始</p>
             </div>
           </div>
         </div>
       </section>
 
+      <!-- 內容 -->
       <section class="box-content box-5 box-style-3" id="nav-blog">
         <div class="container">
-          
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding-right: 0;padding-left: 0;">
+              <!-- 第一章 -->
               <div class="box-item" id="page1">
-                <img src="images/12.jpg" class="img-responsive" />
+                <img src="images/chp1.jpg" class="img-responsive" />
                 <div class="content">
-                  <h3>Planning Our Honeymoon</h3>
-                  <p>
-                    Suspendisse porttitor sapien ac lectus euismod imperdiet.
-                    Curabitur nec nibh at massa pellentesque accumsan eu id
-                    nibh. Donec accumsan ut mi et tincidunt. Aliquam eget metus
-                    nec leo tempor bibendum. Phasellus tincidunt lobortis metus.
-                    Duis euismod lorem turpis at diam.
+                  <h3>第一章：氣團</h3>
+                  <p style="color: rgb(156, 69, 69); margin-bottom: 15px;">
+                    「要不要陪我去看鄧紫棋？」
                   </p>
-                  <span>MAY 21, 2014 BY VAFPRESS</span><br />
+                  <p style="margin-bottom: 15px;">
+                    那天，熊小姐找貓先生去看了演唱會，人聲鼎沸、擁擠的人潮，
+                    也許時無聊，也許是寂寞，讓討厭人群的貓先生就這樣很甘願的被擠。
+                  </p>
+                  <p style="margin-bottom: 15px;">
+                    但僅止於陪伴，就這樣靜靜的，在熊小姐的旁邊。
+                  </p>
+                  <p style="margin-bottom: 15px;">
+                    「我沒想到，為了你我能瘋狂到……」
+                  </p>
+                  <p>
+                    這晚，就在紫棋的歌聲中落幕了。
+                  </p>
                   <a class="btn btn-1" id="rd1">Next Page</a>
                 </div>
               </div>
+              <!-- 第二章 -->
               <div class="box-item" id="page2">
-                <img src="images/13.jpg" class="img-responsive" />
+                <img src="images/chp2.jpg" class="img-responsive" />
                 <div class="content">
-                  <h3>Brainstorming Wedding Ideas</h3>
-                  <p>
-                    Suspendisse porttitor. Aliquam eget metus nec leo tempor
-                    bibendum. Phasellus tincidunt lobortis metus. Duis euismod
-                    lorem turpis, viverra feugiat ipsum volutpat vitae. Fusce
-                    justo turpis, sodales sed placerat non, suscipit at diam.
+                  <h3>第二章：冷氣團</h3>
+                  <p style="color: black; margin-bottom: 12px;">
+                    「這裡沒燈很暗，要不我牽著妳上山？」
+                    <a style="color: rgb(156, 69, 69);"
+                      >「不用啊，我自己走就好。」</a
+                    >
                   </p>
-                  <span>MAY 21, 2014 BY VAFPRESS</span><br />
+                  <p style="margin-bottom: 12px;">
+                    到山頂後，他們聊著過去、現在、未來，熊小姐欣賞著夜景，貓先生欣賞著熊小姐。
+                  </p>
+                  <p style="color: black; margin-bottom: 12px;">
+                    「這裡沒燈很暗，滾下去我可救不了妳」
+                    <a style="color: #666666;"
+                      >，說完便伸出了手，遲疑片刻後，熊小姐抱著忐忑的心情牽了起來。</a
+                    >
+                  </p>
+                  <p>
+                    這天很冷，但心很暖。
+                  </p>
                   <a class="btn btn-1" id="rd2">Next Page</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding-right: 0;padding-left: 0;">
+              <!-- 第三章 -->
               <div class="box-item" id="page3">
-                <img src="images/10.jpg" class="img-responsive" />
+                <img src="images/chp3.jpg" class="img-responsive" />
                 <div class="content">
-                  <h3>She Said Yes!</h3>
-                  <p>
-                    Nunc eu velit metus. Donec in massa libero. Donec bibendum
-                    orci a lorem scelerisque luctus. Aliquam et ante quis erat
-                    semper pretium. Pellentesque vehicula.
+                  <h3>第三章：低氣壓</h3>
+                  <p style="color: rgb(156, 69, 69); ">
+                    「我覺得我還是適合自己一個人。」
                   </p>
-                  <span>MAY 21, 2014 BY VAFPRESS</span><br />
+                  <p>
+                    貓先生不懂，不懂什麼叫適合自己一個人，不懂明明只要踏一步就好了，不懂很想要卻不嘗試，不懂這一切是否是老天爺對他開的玩笑。
+                  </p>
+                  <p>
+                    雖然心有不甘，但他也只能尊重熊小姐的決定，便默默在心中做了選擇。
+                  </p>
+                  <p>
+                    原來容忍不需要天份，只要愛錯一個人。
+                  </p>
                   <a class="btn btn-1" id="rd3">Next Page</a>
                 </div>
               </div>
+              <!-- 第四章 -->
               <div class="box-item" id="page4">
-                <img src="images/11.jpg" class="img-responsive" />
+                <img src="images/chp4.jpg" class="img-responsive" />
                 <div class="content">
-                  <h3>Met Dovey???s Parents in Chicago</h3>
+                  <h3>第四章：滯留鋒</h3>
                   <p>
-                    Class aptent taciti urna bibendum id. Duis a commodo lectus.
-                    Morbi id purus nec purus feugiat vestibulum. Suspendisse
-                    sapien ante, bibendum ac quam quis, imperdiet bibendum sem.
-                    Curabitur nibh magna, tristique et convallis???
+                    從那之後，貓先生就變回了原本的樣子，上一秒還在，下一秒就消失，行蹤神祕。
                   </p>
-                  <span>MAY 21, 2014 BY VAFPRESS</span><br />
+                  <p style="color: rgb(156, 69, 69); ">
+                    「他現在在幹嘛呢？」
+                  </p>
+                  <p>
+                    這個念頭開始在熊小姐的心頭徘徊，這時候的熊小姐才發現，內心變得空空的，似乎少了些什麼東西，那個曾經會隨傳隨到的貓先生不見了。
+                  </p>
+                  <p>經歷了分離，才學會要珍惜。</p>
                   <a class="btn btn-1" id="rd4">Next Page</a>
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4" style="padding-right: 0;padding-left: 0;">
+              <!-- 第五章 -->
               <div class="box-item" id="page5">
                 <img src="images/14.jpg" class="img-responsive" />
                 <div class="content">
-                  <h3>Choosing The Bridesmaids and Groomsmen</h3>
+                  <h3>第五章：雨後天晴</h3>
                   <p>
-                    Suspendisse porttitor sapien ac lectus euismod imperdiet.
-                    Curabitur nec nibh at massa pellentesque accumsan eu id
-                    nibh. Donec accumsan ut mi.
+                    不再與貓先生熱絡的熊小姐，飯照吃、日子照過，但漸漸的發現，到哪都會想起貓先生。
                   </p>
+                  <p style="color: black;">
+                    「要去看夜景嗎？」
+                    <a style="color: #666666;">貓先生又出現了， </a>
+                  </p>
+                  <p>這次的熊小姐決定不再讓機會錯過，要坦誠面對自己的心情，</p>
                   <span>MAY 21, 2014 BY VAFPRESS</span><br />
                   <a class="btn btn-1" id="rd5">Next Page</a>
                 </div>
               </div>
+              <!-- 第六章 -->
               <div class="box-item" id="page6">
                 <img src="images/15.jpg" class="img-responsive" />
                 <div class="content">
@@ -308,16 +343,19 @@
         }, 200);
       });
 
-	// 角色介紹
-	$("#chp1").click(function() {
-        $("html,body").animate({ scrollTop: $("#carousel2").offset().top }, 1000);
+      // 角色介紹
+      $("#chp1").click(function() {
+        $("html,body").animate(
+          { scrollTop: $("#carousel2").offset().top },
+          1000
+        );
       });
-	$("#chp2").click(function() {
+      $("#chp2").click(function() {
         $("html,body").animate({ scrollTop: $("#page1").offset().top }, 2000);
       });
 
-	// 故事內容
-    
+      // 故事內容
+
       $("#rd1").click(function() {
         $("html,body").animate({ scrollTop: $("#page2").offset().top }, 1000);
       });
@@ -345,6 +383,6 @@
       $(".maps").mouseleave(function() {
         $(".maps iframe").css("pointer-events", "none");
       });
-	</script>	
+    </script>
   </body>
 </html>
