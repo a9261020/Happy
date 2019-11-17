@@ -42,6 +42,7 @@
 
   <body class="index-page">
     <!-- 熊小姐介紹 -->
+    <div id="top"></div>
     <header id="nav-home">
       <div
         id="carousel-example-generic"
@@ -296,7 +297,7 @@
                 <div class="content">
                   <h3>第六章：後來的故事</h3>
                   <p>
-                    這本書就只寫到這裡了，後來的故事，也許兩個人就這樣錯過了，也許像照片上，兩顆心終於頻率相同的寫著續集。
+                    這本書就只寫到這裡了，後來的故事，也許兩個人就這樣錯過了，也許像照片上，兩顆心終於頻率相同的寫著續集，只希望開頭的我愛你，最後別變成了我愛過你。
                   </p>
                   <p>
                     有些人總會害怕失敗、害怕沒結果。
@@ -304,7 +305,7 @@
                   <p>
                     但卻沒想過沒有行動，只會讓你錯過。
                   </p>
-                  <a class="btn btn-1" id="rd6">Next Page</a>
+                  <a class="btn btn-1" id="rd6">Restart</a>
                 </div>
               </div>
             </div>
@@ -354,7 +355,7 @@
       $("#chp1").click(function() {
         $("html,body").animate(
           { scrollTop: $("#carousel2").offset().top },
-          1000
+          2000
         );
       });
       $("#chp2").click(function() {
@@ -364,19 +365,22 @@
       // 故事內容
 
       $("#rd1").click(function() {
-        $("html,body").animate({ scrollTop: $("#page2").offset().top }, 1000);
+        $("html,body").animate({ scrollTop: $("#page2").offset().top }, 2000);
       });
       $("#rd2").click(function() {
-        $("html,body").animate({ scrollTop: $("#page3").offset().top }, 1000);
+        $("html,body").animate({ scrollTop: $("#page3").offset().top }, 2000);
       });
       $("#rd3").click(function() {
-        $("html,body").animate({ scrollTop: $("#page4").offset().top }, 1000);
+        $("html,body").animate({ scrollTop: $("#page4").offset().top }, 2000);
       });
       $("#rd4").click(function() {
-        $("html,body").animate({ scrollTop: $("#page5").offset().top }, 1000);
+        $("html,body").animate({ scrollTop: $("#page5").offset().top }, 2000);
       });
       $("#rd5").click(function() {
-        $("html,body").animate({ scrollTop: $("#page6").offset().top }, 1000);
+        $("html,body").animate({ scrollTop: $("#page6").offset().top }, 2000);
+      });
+      $("#rd6").click(function() {
+        $("html,body").animate({ scrollTop: $("#top").offset().top }, 2000);
       });
     </script>
 
